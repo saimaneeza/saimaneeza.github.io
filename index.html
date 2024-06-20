@@ -71,11 +71,11 @@
   </head>
   <body>
     <script>
-      document.addEventListener('load', (event) => {
+      document.addEventListener('DOMContentLoaded', (event) => {
         const PASSWORD = 'saimaneeza';
         const answer = prompt('Password: ');
         if (answer.trim().toLowerCase() !== PASSWORD) {
-          docomunent.body.innerHtml = 'Access denied';
+          docomunent.body.innerHTML = 'Access denied';
         }
       });
     </script>
