@@ -70,6 +70,15 @@
     <title>Saim and Aneeza</title>
   </head>
   <body>
+    <script>
+      document.addEventListener('load', (event) => {
+        const PASSWORD = 'saimaneeza';
+        const answer = prompt('Password: ');
+        if (answer.trim().toLowerCase() !== PASSWORD) {
+          docomunent.body.innerHtml = 'Access denied';
+        }
+      });
+    </script>
     <p class="welcome">Welcome to the wedding of</p>
     <h1>Saim and Aneeza</h1>
     <h2>Photo Album</h2>
