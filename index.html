@@ -98,7 +98,7 @@
     <script>
       const PASSWORD = 'saimaneeza';
       const answer = prompt('Password: ');
-      if (answer.trim().toLowerCase() !== PASSWORD) {
+      if (("" + answer).trim().toLowerCase() !== PASSWORD) {
         document.body.innerHTML = 'Access denied';
       }
     </script>
